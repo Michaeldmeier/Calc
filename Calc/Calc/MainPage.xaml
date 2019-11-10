@@ -20,136 +20,137 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Label Grid.Row="0" Grid.Column="0"
+        <Label x:Name="Result"
+               Grid.Row="0" Grid.Column="0"
                Grid.ColumnSpan="4"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-               FontSize="Large"
-               Text="0">
+               FontSize="Title"
+               Text="">
         </Label>
 
         <Button Grid.Row="1" Grid.Column="0"
                 Text="C"         
-           Clicked="4_Clicked"
+          Clicked="Button_ClickedC"
                 BackgroundColor="Chocolate"
             ></Button>
 
 
         <Button Grid.Row="1" Grid.Column="1"
                 Text="+/-"   
-            Clicked=""
+            Clicked="Button_ClickedPlusMinus"
                      BackgroundColor="Chocolate"
             ></Button>
 
         <Button Grid.Row="1" Grid.Column="2"
                 Text="%"
-            Clicked="Button_Clicked"
+            Clicked="Button_ClickedPercent"
                     BackgroundColor="Chocolate"
             ></Button>
 
 
         <Button Grid.Row="1" Grid.Column="3"
                 Text="/"
-            Clicked="Button_Clicked"
+            Clicked="Button_ClickedDivide"
             BackgroundColor="Orange"
             ></Button>
 
 
         <Button Grid.Row="2" Grid.Column="0"
                 Text="7"         
-           Clicked="4_Clicked"
+           Clicked="Button_ClickedSeven"
                  BackgroundColor="DarkGray"
             ></Button>
 
 
         <Button Grid.Row="2" Grid.Column="1"
                 Text="8"   
-            Clicked=""
+            Clicked="Button_ClickedEight"
                  BackgroundColor="DarkGray"
             ></Button>
 
         <Button Grid.Row="2" Grid.Column="2"
                 Text="9"
-            Clicked="Button_Clicked"
+            Clicked="Button_ClickedNine"
                  BackgroundColor="DarkGray"
             ></Button>
 
 
         <Button Grid.Row="2" Grid.Column="3"
                 Text="x"
-            Clicked="Button_Clicked"
+            Clicked="Button_ClickedMultiply"
                    BackgroundColor="Orange"     
             ></Button>
 
         <Button Grid.Row="3" Grid.Column="0"
                 Text="4"         
-           Clicked="4_Clicked"
+           Clicked="Button_ClickedFour"
                  BackgroundColor="DarkGray"
             ></Button>
 
 
         <Button Grid.Row="3" Grid.Column="1"
                 Text="5"   
-            Clicked=""
+            Clicked="Button_ClickedFive"
                  BackgroundColor="DarkGray"
             ></Button>
 
         <Button Grid.Row="3" Grid.Column="2"
                 Text="6"
-            Clicked="Button_Clicked"
+            Clicked="Button_ClickedSix"
                  BackgroundColor="DarkGray"
             ></Button>
 
 
         <Button Grid.Row="3" Grid.Column="3"
                 Text="-"
-            Clicked="Button_Clicked"
+            Clicked="Button_ClickedSubtract"
                    BackgroundColor="Orange"
             ></Button>
 
         <Button Grid.Row="4" Grid.Column="0"
                 Text="1"
-            Clicked="1_Clicked"
+            Clicked="Button_ClickedOne"
                  BackgroundColor="DarkGray"
             ></Button>
 
 
         <Button Grid.Row="4" Grid.Column="1"
                 Text="2"  
-            Clicked="Button_Clicked_1"
+            Clicked="Button_ClickedTwo"
                  BackgroundColor="DarkGray"
             ></Button>
 
         <Button Grid.Row="4" Grid.Column="2"
                 Text="3"
-            Clicked="Button_Clicked"
+            Clicked="Button_ClickedThree"
                  BackgroundColor="DarkGray"
             ></Button>
 
 
         <Button Grid.Row="4" Grid.Column="3"
             Text="+"
-            Clicked="Button_Clicked"
+            Clicked="Button_ClickedAddition"
             BackgroundColor="Orange"
             ></Button>
 
         <Button Grid.Row="5" Grid.Column="0"
              Grid.ColumnSpan="2"
              Text="0"
-            Clicked="Button_Clicked"
+            Clicked="Button_ClickedZero"
                  BackgroundColor="DarkGray"
             ></Button>
 
         <Button Grid.Row="5" Grid.Column="2"
                 Text="."
-            Clicked="Button_Clicked"
+            Clicked="Button_ClickedPoint"
                   BackgroundColor="DarkGray"
             ></Button>
 
 
         <Button Grid.Row="5" Grid.Column="3"
                 Text="="
-            Clicked="Button_Clicked"
+            Clicked="Button_ClickedResult"
                    BackgroundColor="Orange"
             ></Button>
 
