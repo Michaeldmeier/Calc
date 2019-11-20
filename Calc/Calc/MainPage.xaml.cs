@@ -20,9 +20,8 @@ namespace Calc
 
         private void Button_ClickedC(object sender, EventArgs e)
         {
-            
             Result.Text = "";
-           
+            calculator.resetValues();
         }
 
         private void Button_ClickedPlusMinus(object sender, EventArgs e)
@@ -37,7 +36,8 @@ namespace Calc
 
         private void Button_ClickedDivide(object sender, EventArgs e)
         {
-
+            calculator.AddOperation(Operations.Division);
+            Result.Text += " / ".ToString();
         }
 
         private void Button_ClickedSeven(object sender, EventArgs e)
@@ -60,7 +60,8 @@ namespace Calc
 
         private void Button_ClickedMultiply(object sender, EventArgs e)
         {
-
+            calculator.AddOperation(Operations.Multiplication);
+            Result.Text += " * ".ToString();
         }
 
         private void Button_ClickedFour(object sender, EventArgs e)
@@ -83,7 +84,8 @@ namespace Calc
 
         private void Button_ClickedSubtract(object sender, EventArgs e)
         {
-
+            calculator.AddOperation(Operations.Subtraction);
+            Result.Text += " - ".ToString();
         }
 
         private void Button_ClickedOne(object sender, EventArgs e)
@@ -106,8 +108,6 @@ namespace Calc
 
         private void Button_ClickedAddition(object sender, EventArgs e)
         {
-                    
-
             calculator.AddOperation(Operations.Addition);
             Result.Text += " + ".ToString();
         }
@@ -121,7 +121,7 @@ namespace Calc
 
         private void Button_ClickedResult(object sender, EventArgs e)
         {
-            
+            Result.Text = calculator.getSummary();
         }
 
         private void Button_ClickedPoint(object sender, EventArgs e)
