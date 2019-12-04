@@ -9,14 +9,15 @@ namespace Calc
 {
     public partial class MainPage : ContentPage
     {
-        private ICalculator calculator = new Calculator();
+        private ICalculator calculator;
 
-        public MainPage()
+        public MainPage(ICalculator calculator)
         {
             InitializeComponent();
+            this.calculator = calculator;
         }
 
-     
+
 
         private void Button_ClickedC(object sender, EventArgs e)
         {
@@ -42,19 +43,19 @@ namespace Calc
 
         private void Button_ClickedSeven(object sender, EventArgs e)
         {
-            calculator.AddOperand(7);
+            calculator.AddOperand(Operands.Seven);
             Result.Text += 7.ToString();
         }
 
         private void Button_ClickedEight(object sender, EventArgs e)
         {
-            calculator.AddOperand(8);
+            calculator.AddOperand(Operands.Eight);
             Result.Text += 8.ToString();
         }
 
         private void Button_ClickedNine(object sender, EventArgs e)
         {
-            calculator.AddOperand(9);
+            calculator.AddOperand(Operands.Nine);
             Result.Text += 9.ToString();
         }
 
@@ -66,13 +67,13 @@ namespace Calc
 
         private void Button_ClickedFour(object sender, EventArgs e)
         {
-            calculator.AddOperand(4);
+            calculator.AddOperand(Operands.Four);
             Result.Text += 4.ToString();
         }
 
         private void Button_ClickedFive(object sender, EventArgs e)
         {
-            calculator.AddOperand(5);
+            calculator.AddOperand(Operands.Five);
             Result.Text += 5.ToString();
         }
 
