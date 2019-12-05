@@ -27,12 +27,12 @@ namespace Calc
 
         private void Button_ClickedPlusMinus(object sender, EventArgs e)
         {
-
+            Result.Text = calculator.changeSign();
         }
 
         private void Button_ClickedPercent(object sender, EventArgs e)
         {
-
+            Result.Text = calculator.divideBy100();
         }
 
         private void Button_ClickedDivide(object sender, EventArgs e)
@@ -62,7 +62,7 @@ namespace Calc
         private void Button_ClickedMultiply(object sender, EventArgs e)
         {
             calculator.AddOperation(Operations.Multiplication);
-            Result.Text += " * ".ToString();
+            Result.Text += " x ".ToString();
         }
 
         private void Button_ClickedFour(object sender, EventArgs e)
@@ -79,7 +79,7 @@ namespace Calc
 
         private void Button_ClickedSix(object sender, EventArgs e)
         {
-            calculator.AddOperand(6);
+            calculator.AddOperand(Operands.Six);
             Result.Text += 6.ToString();
         }
 
@@ -91,19 +91,19 @@ namespace Calc
 
         private void Button_ClickedOne(object sender, EventArgs e)
         {
-            calculator.AddOperand(1);
+            calculator.AddOperand(Operands.One);
             Result.Text += 1.ToString();
         }
 
         private void Button_ClickedTwo(object sender, EventArgs e)
         {
-            calculator.AddOperand(2);
+            calculator.AddOperand(Operands.Two);
             Result.Text += 2.ToString();
         }
 
         private void Button_ClickedThree(object sender, EventArgs e)
         {
-            calculator.AddOperand(3);
+            calculator.AddOperand(Operands.Three);
             Result.Text += 3.ToString();
         }
 
@@ -115,7 +115,7 @@ namespace Calc
 
         private void Button_ClickedZero(object sender, EventArgs e)
         {
-            calculator.AddOperand(0);
+            calculator.AddOperand(Operands.Zero);
             Result.Text += 0.ToString();
         }
 
@@ -127,7 +127,7 @@ namespace Calc
 
         private void Button_ClickedPoint(object sender, EventArgs e)
         {
-
+            Result.Text += calculator.addComma();
         }
     }
 }
