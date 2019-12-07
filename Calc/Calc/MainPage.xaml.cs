@@ -17,8 +17,6 @@ namespace Calc
             this.calculator = calculator;
         }
 
-
-
         private void Button_ClickedC(object sender, EventArgs e)
         {
             Result.Text = "";

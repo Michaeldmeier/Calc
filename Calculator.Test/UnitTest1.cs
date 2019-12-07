@@ -12,9 +12,9 @@ namespace Calc.Test
             string expectedResult = "4";
 
             Calculator calculator = new Calculator();
-            calculator.AddOperand(2);
+            calculator.AddOperand(Operands.Two);
             calculator.AddOperation(Operations.Addition);
-            calculator.AddOperand(2);
+            calculator.AddOperand(Operands.Two);
 
             // Act
             var result = calculator.getSummary();
@@ -30,9 +30,9 @@ namespace Calc.Test
             string expectedResult = "2";
 
             Calculator calculator = new Calculator();
-            calculator.AddOperand(4);
+            calculator.AddOperand(Operands.Four);
             calculator.AddOperation(Operations.Subtraction);
-            calculator.AddOperand(2);
+            calculator.AddOperand(Operands.Two);
 
             // Act
             var result = calculator.getSummary();
@@ -48,9 +48,9 @@ namespace Calc.Test
             string expectedResult = "8";
 
             Calculator calculator = new Calculator();
-            calculator.AddOperand(4);
+            calculator.AddOperand(Operands.Four);
             calculator.AddOperation(Operations.Multiplication);
-            calculator.AddOperand(2);
+            calculator.AddOperand(Operands.Two);
 
             // Act
             var result = calculator.getSummary();
@@ -66,9 +66,9 @@ namespace Calc.Test
             string expectedResult = "2";
 
             Calculator calculator = new Calculator();
-            calculator.AddOperand(4);
+            calculator.AddOperand(Operands.Four);
             calculator.AddOperation(Operations.Division);
-            calculator.AddOperand(2);
+            calculator.AddOperand(Operands.Two);
 
             // Act
             var result = calculator.getSummary();
